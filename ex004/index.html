@@ -1,0 +1,22 @@
+<meta charse ="UTF-8">
+<script>
+    var a, b, c, x1, x2, d;
+
+        a = Number(prompt("Informe o primeiro coeficiente."));
+        if (a == 0) {
+            document.write("Não é possível fazer a equação.");
+        } else {
+            b = Number(prompt("Informe o segundo coeficiente."));
+            c = Number(prompt("Informe o terceiro coeficiente."));
+
+            d = b * b - 4 * a * c;
+            if (d < 0) {
+                document.write("Não é possível fazer a equação.");
+            } else {
+                x1 = (-b + Math.sqrt(d))/(2*a);
+                x2 = (-b + Math.sqrt(d))/(2*a);
+
+                document.write("Raízes: X1 = "+x1+" e X2 = "+x2);
+            }
+        }
+</script>
