@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    var altura, sexo, p, qmul, qhom, media;
+	
+	qmul = 0;
+	qhom = 0;
+	media = 0;
+		
+	for (p = 1; p <= 10; p = p + 1){
+			altura = parseFloat(prompt("Informe a altura da pessoa:"));
+			sexo = prompt("Informe o sexo da pessoa: M/F?");
+			if (sexo == "F" && altura > 1.65) {
+				qmul++;
+			}
+			if (sexo == "M" && altura < 1.8){
+				qhom++;
+			}
+			media = media + altura;
+		}
+
+		document.write("Quantidade de mulheres acima de 1.65m = "+qmul+"<br>");
+		document.write("Quantidade de homens abaixo de 1.8m = "+qhom+"<br>");
+		document.write("Altura média do grupo: "+media/10);
+</script>
