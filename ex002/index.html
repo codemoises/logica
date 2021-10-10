@@ -1,0 +1,21 @@
+<meta charset = "UTF-8">
+<script>
+    var rota01, rota02, rota03;
+        
+        rota01 = Number(prompt("Informe o segmento da primeira rota."));
+        rota02 = Number(prompt("Informe o segmento da segunda rota."));
+        rota03 = Number(prompt("Informe o segmento da terceira rota."));
+        
+        if (rota01 + rota02 > rota03 && rota01 + rota03 > rota01) {
+            document.write("As rotas informadas formam um triângulo.");
+            if (rota01 == rota02 && rota02 == rota03 && rota01 == rota03) {
+                document.write("As rotas formam um triângulo isósceles.");
+            } else
+            if (rota01 != rota02 && rota01 != rota!= rota03 ) {
+                document.write("As rotas formam um triângulo equilátero.");
+            }
+        } else {
+            document.write("As rotas não formam um triângulo");
+        }
+
+</script>
