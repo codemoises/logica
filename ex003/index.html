@@ -1,20 +1,21 @@
 <meta charset="UTF-8">
 <script>
-    var altura, sexo, p, qmul, qhom, media;
+    
+	var altura, sexo, p, qmul, qhom, media;
 	
 	qmul = 0;
 	qhom = 0;
 	media = 0;
 		
-	for (p = 1; p <= 10; p = p + 1){
+	for (p = 1; p <= 10; p = p + 1) {
 			altura = parseFloat(prompt("Informe a altura da pessoa:"));
 			sexo = prompt("Informe o sexo da pessoa: M/F?");
-			if (sexo == "F" && altura > 1.65) {
-				qmul++;
-			}
-			if (sexo == "M" && altura < 1.8){
-				qhom++;
-			}
+				if (sexo == "F" && altura > 1.65) {
+					qmul++;
+				}
+				if (sexo == "M" && altura < 1.8){
+					qhom++;
+				}
 			media = media + altura;
 		}
 
