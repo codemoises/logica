@@ -4,16 +4,18 @@
     var sb, ir;
 
     sb = Number(prompt("Informe seu salário."));
+    
     if (sb <= 1300,00) {
         document.write("Você é isento.");
-    } else {
-        if (sb <= 4000,00) {
-            ir = (sb - 1300)*(12.5/100);
-            document.write("O imposto a pagar R$ " + ir.toFixed(2) + "<br>");
-
+    
         } else {
-            ir = (sb - 4000)*0.27 + (4000 - 1300)*(2.5/100)
-            document.write("O imposto a pagar é de R$ "+ir.toFixed(2)+"<br>");
+            if (sb <= 4000,00) {
+                ir = (sb - 1300)*(12.5/100);
+                document.write("O imposto a pagar R$ " + ir.toFixed(2) + "<br>");
+
+                } else {
+                    ir = (sb - 4000)*0.27 + (4000 - 1300)*(2.5/100)
+                    document.write("O imposto a pagar é de R$ "+ir.toFixed(2) + "<br>");
+                }
         }
-    }
 </script>
