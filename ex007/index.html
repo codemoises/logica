@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+<script>
+    var Esc, numero01, numero02, numero03, mru, mcu, Fr, P;
+
+    Esc = prompt(`Escolha uma fórmula: 
+    
+    01) Movimento retilíneo uniforme
+    02) Movimento circular uniforme
+    03) Força resultante
+    04) Peso
+    `);
+    if (Esc == "Movimento retilíneo uniforme" || Esc == "01") {
+        numero01 = Number(prompt("Informe sua posição inicial."));
+        numero02 = Number(prompt("Informe sua velocidade em m/s."));
+        numero03 = Number(prompt("Informe o intervalo de tempo."));
+
+        mru = (numero01 + numero02 * numero03);
+
+        document.write("Sua posição final: " + mru + " metros.");
+
+    } else
+        if (Esc == "Movimento circular uniforme" || Esc == "02") {
+            numero01 = Number(prompt("Informe sua velocidade angular em rad/s."));
+            numero02 = Number(prompt("Informe o raio da trajetória em metros."));
+
+            mcu = (numero01 * numero02);
+            
+            document.write("Seu movimento circular uniforme: " + mcu + " m/s.");
+
+            }
+        else
+            if (Esc == "Força resultante" || Esc == "03") {
+                numero01 = Number(prompt("Informe sua massa em kg."));
+                numero02 = Number(prompt("Informe sua aceleração em m/s²"));
+
+                Fr = (numero01 * numero02);
+
+                document.write("Sua força resultante: " + Fr + "N.");
+            } else {
+                if (Esc == "Peso" || Esc == "04") {
+                    numero01 = Number(prompt("Informe sua massa em kg."));
+                    numero02 = Number(prompt("Informe sua aceleração da gravidade."));
+
+                    P = (numero01 * numero02);
+
+                    document.write("Seu peso: " + P + "N");
+                }
+                
+            }
+
+
+</script>  
