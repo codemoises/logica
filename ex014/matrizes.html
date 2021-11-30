@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //declaração da matriz
+        var i, j, M = [];
+        for (i = 0; i < 3; i ++){
+            M[i] = [];
+        }
+        //Alimentação da matriz
+        for (i = 0; i < 3; i ++){
+            for (j = 0; j < 2; j++){
+                M[i][j] = Number(prompt("Informe o elemento da linha "+i+" e da coluna "+j));
+            }
+        }
+        //Apresentação da matriz
+        for (i = 0; i < 3; i ++){
+            for (j = 0; j < 2; j++){
+                document.write(M[i][j]+" ");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
