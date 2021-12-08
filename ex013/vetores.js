@@ -11,7 +11,7 @@ A[1] = 2;
 A[2] = 3;
 
 for (p = 1; p <= 5; p++) {
-    B[p] = parseInt(primpt("Informe o valor da posição " + p));
+    B[p] = parseInt(prompt("Informe o valor da posição " + p));
 
 }
 
